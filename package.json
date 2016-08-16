@@ -18,6 +18,7 @@
   "homepage": "https://github.com/MaxwellHuang/AngularDemo#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0"
+    "grunt-contrib-copy": "^1.0.0",
+    "gulp": "^3.9.1"
   }
 }
