@@ -1,0 +1,20 @@
+{
+  "name": "AngularDemo",
+  "homepage": "https://github.com/MaxwellHuang/AngularDemo",
+  "authors": [
+    "maxwell <hxyxm2008@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "ui-router#^0.3.1"
+  }
+}

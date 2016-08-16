@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">
+                Title
+            </div>
+        </div>
+        <div class="panel-body">
+            <form name="myName" class="form-horizontal" novalidate>
+                <div class="row">
+                    <div class="form-group has-feedback"
+                         ng-class="{'has-error':myName.name.$invalid && myName.name.$dirty,'has-success':myName.name.$valid}">
+                        <label for="name" class="col-xs-2 control-label">姓名:</label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" id="name" name="name" ng-model="person.name"
+                                   required/>
+                            <span class="glyphicon glyphicon-ok form-control-feedback"
+                                  ng-show="myName.name.$valid"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback"
+                                  ng-show="myName.name.$invalid && myName.name.$dirty"></span>
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback"
+                         ng-class="{'has-error':myName.password.$invalid && myName.password.$dirty,'has-success':myName.password.$valid}">
+                        <label for="password" class="col-xs-2 control-label">密码:</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="password" name="password" class="form-control"
+                                   ng-model="person.password"
+                                   required>
+                            <span class="glyphicon glyphicon-ok form-control-feedback"
+                                  ng-show="myName.password.$valid"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback"
+                                  ng-show="myName.password.$invalid && myName.password.$dirty"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-9 col-xs-offset-2">
+                            <input type="checkbox" id="rememberMe" ng-model="person.remember">记住我
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <div class="btn-group">
+                                <button ng-disabled="myName.name.$invalid" type="button"
+                                        class="btn btn-info"
+                                        ng-click="save()">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                    添加
+                                </button>
+                                <button type="button" class="btn btn-default" ng-click="reset()">
+                                    <span class="glyphicon glyphicon-refresh"></span>
+                                    重置
+                                </button>
+                                <button type="button" class="btn btn-danger" ng-click="remove()">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                    删除
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
