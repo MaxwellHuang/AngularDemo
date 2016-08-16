@@ -1,0 +1,23 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxwellHuang/AngularDemo.git"
+  },
+  "author": "Maxwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxwellHuang/AngularDemo/issues"
+  },
+  "homepage": "https://github.com/MaxwellHuang/AngularDemo#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}
