@@ -33,5 +33,5 @@ demo.factory("myService", function () {
 demo.filter("isRemember", function () {
     return function (input) {
         return input ? '是' : '否';
-    }
+    };
 });
